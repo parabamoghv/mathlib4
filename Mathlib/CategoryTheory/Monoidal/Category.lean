@@ -464,6 +464,14 @@ scoped infixr:70 " ⊗ᵢ " => tensorIso
 -- TODO: Try setting this notation to `⊗` if the elaborator is improved and performs
 -- better than currently on overloaded notations.
 
+/-- Notation for the `whiskerLeftIso`, the whiskering of isomorphisms on the left -/
+scoped infixr:81 " ◁ᵢ " => whiskerLeftIso
+
+/-- Notation for the `whiskerRightIso`, the whiskering of isomorphisms on the right -/
+scoped infixl:81 " ▷ᵢ " => whiskerRightIso
+
+
+
 theorem tensorIso_def {X Y X' Y' : C} (f : X ≅ Y) (g : X' ≅ Y') :
     f ⊗ᵢ g = whiskerRightIso f X' ≪≫ whiskerLeftIso Y g :=
   Iso.ext (tensorHom_def f.hom g.hom)
