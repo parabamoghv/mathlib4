@@ -467,7 +467,7 @@ scoped infixr:70 " ⊗ᵢ " => tensorIso
 /-- Notation for the `whiskerLeftIso`, the whiskering of isomorphisms on the left -/
 scoped infixr:81 " ◁ᵢ " => whiskerLeftIso
 
-/-- Notation for the `whiskerRightIso`, the whiskering of isomorphisms on the right -/
+/-- Notation for `whiskerRightIso`, the whiskering of isomorphisms on the right -/
 scoped infixl:81 " ▷ᵢ " => whiskerRightIso
 
 theorem tensorIso_def {X Y X' Y' : C} (f : X ≅ Y) (g : X' ≅ Y') :
