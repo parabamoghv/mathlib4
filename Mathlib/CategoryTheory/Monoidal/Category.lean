@@ -470,8 +470,6 @@ scoped infixr:81 " ◁ᵢ " => whiskerLeftIso
 /-- Notation for `whiskerRightIso`, the whiskering of isomorphisms on the right -/
 scoped infixl:81 " ▷ᵢ " => whiskerRightIso
 
-
-
 theorem tensorIso_def {X Y X' Y' : C} (f : X ≅ Y) (g : X' ≅ Y') :
     f ⊗ᵢ g = whiskerRightIso f X' ≪≫ whiskerLeftIso Y g :=
   Iso.ext (tensorHom_def f.hom g.hom)
