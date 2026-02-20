@@ -459,7 +459,7 @@ def tensorIso {X Y X' Y' : C} (f : X ≅ Y)
   hom_inv_id := by simp [Iso.hom_inv_id, Iso.hom_inv_id]
   inv_hom_id := by simp [Iso.inv_hom_id, Iso.inv_hom_id]
 
-/-- Notation for the `tensorIso`, the tensor product of isomorphisms -/
+/-- Notation for `tensorIso`, the tensor product of isomorphisms -/
 scoped infixr:70 " ⊗ᵢ " => tensorIso
 -- TODO: Try setting this notation to `⊗` if the elaborator is improved and performs
 -- better than currently on overloaded notations.
