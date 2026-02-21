@@ -255,7 +255,7 @@ theorem inv_whiskerRight {f g : a ⟶ b} (η : f ⟶ g) (h : b ⟶ c) [IsIso η]
 /-- Notation for the `whiskerLeftIso`, the left whiskering of a 2-isomorphism -/
 scoped infixr:82 " ◁ᵢ " => whiskerLeftIso
 
-/-- Notation for the `whiskerRightIso`, the right whiskering of a 2-isomorphism -/
+@[inherit_doc whiskerRightIso]
 scoped infixl:82 " ▷ᵢ " => whiskerRightIso
 
 @[reassoc (attr := simp)]
