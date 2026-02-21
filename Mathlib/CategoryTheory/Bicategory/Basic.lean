@@ -252,7 +252,7 @@ theorem inv_whiskerRight {f g : a ⟶ b} (η : f ⟶ g) (h : b ⟶ c) [IsIso η]
   apply IsIso.inv_eq_of_hom_inv_id
   simp only [← comp_whiskerRight, id_whiskerRight, IsIso.hom_inv_id]
 
-/-- Notation for the `whiskerLeftIso`, the left whiskering of a 2-isomorphism -/
+@[inherit_doc whiskerLeftIso]
 scoped infixr:82 " ◁ᵢ " => whiskerLeftIso
 
 @[inherit_doc whiskerRightIso]
